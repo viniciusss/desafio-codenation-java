@@ -14,8 +14,6 @@ import java.io.File
 import java.security.MessageDigest
 
 
-// references:
-
 fun String.sha1(): String {
     val digestBytes = MessageDigest.getInstance("SHA-1").digest(this.toByteArray())
     return digestBytes.toHex()
